@@ -3,6 +3,7 @@ FROM alpine:3.3
 # the following ENV need to be present
 ENV IAM_ROLE=none
 ENV MOUNT_POINT=/var/s3
+ENV URL=https://s3.amazonaws.com
 VOLUME /var/s3
 
 ARG S3FS_VERSION=v1.79
